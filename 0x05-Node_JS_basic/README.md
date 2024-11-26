@@ -361,6 +361,8 @@ bob@dylan:~$
 GitHub repository: alx-backend-javascript
 Directory: 0x05-Node_JS_basic
 File: 5-http.js
+
+
 6. Create a small HTTP server using Express
 mandatory
 Install Express and in a file named 6-http_express.js, create a small HTTP server using Express module:
@@ -370,10 +372,13 @@ HTTP server should listen on port 1245
 Displays Hello Holberton School! in the page body for the endpoint /
 In terminal 1:
 
+```bash
 bob@dylan:~$ node 6-http_express.js
 ...
+```
 In terminal 2:
 
+```bash
 bob@dylan:~$ curl localhost:1245 && echo ""
 Hello Holberton School!
 bob@dylan:~$ 
@@ -396,6 +401,8 @@ bob@dylan:~$
 GitHub repository: alx-backend-javascript
 Directory: 0x05-Node_JS_basic
 File: 6-http_express.js
+
+
 7. Create a more complex HTTP server using Express
 mandatory
 In a file named 7-http_express.js, recreate the small HTTP server using Express:
@@ -408,10 +415,13 @@ When the URL path is /students, it should display This is the list of our studen
 CSV file can contain empty lines (at the end) - and they are not a valid student!
 Terminal 1:
 
+```bash
 bob@dylan:~$ node 7-http_express.js database.csv
 ...
+```
 In terminal 2:
 
+```bash
 bob@dylan:~$ curl localhost:1245 && echo ""
 Hello Holberton School!
 bob@dylan:~$ 
@@ -443,6 +453,7 @@ It should read the database asynchronously
 It should return a promise
 When the file is not accessible, it should reject the promise with the error
 When the file can be read, it should return an object of arrays of the firstname of students per fields
+
 8.2 Write the App controller
 Inside the file full_server/controllers/AppController.js:
 
@@ -491,6 +502,7 @@ bob@dylan:~$ npm run dev
 ```
 In terminal 2:
 
+```bash
 bob@dylan:~$ curl localhost:1245 && echo ""
 Hello Holberton School!
 bob@dylan:~$ 
@@ -523,7 +535,9 @@ bob@dylan:~$
 If you want to add test to validate your integration, you will need to add this file: .babelrc
 
 Click to show/hide file contents
-Repo:
+```
+
+**Repo:**
 
 GitHub repository: alx-backend-javascript
 Directory: 0x05-Node_JS_basic
